@@ -110,9 +110,9 @@ app.get('/detail', function (req, res) {
     }
     preferences.notification_url ='https://fabcataldo-mp-commerce-nodejs.herokuapp.com/webhook';
     preferences.back_urls = {
-            success:'https://localhost:3000/successPayment',
-            pending:'https://localhost:3000/pendingPayment',
-            failure:'https://localhost:3000/failurePayment'
+            success:'https://fabcataldo-mp-commerce-nodejs.herokuapp.com/successPayment',
+            pending:'https://fabcataldo-mp-commerce-nodejs.herokuapp.com/pendingPayment',
+            failure:'https://fabcataldo-mp-commerce-nodejs.herokuapp.com/failurePayment'
     }
     preferences.auto_return =  'approved';
     preferences.external_reference = "fabioalbertocataldo@gmail.com";
