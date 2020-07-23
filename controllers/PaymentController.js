@@ -20,6 +20,8 @@ class PaymentController {
             let body = ""; 
             req.on("data", chunk => {  
               body += chunk.toString();
+              console.log('json webhoook\n')
+              console.log(body);
             });
             req.on("end", () => {  
               res.end("ok");
