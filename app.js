@@ -32,7 +32,6 @@ mercadopago.configure({
 
 var payer={
     id: "471923173",
-    type: "registered",
     name:"Lalo",
     surname:"Landa",
     email:"test_user_63274575@testuser.com",
@@ -87,7 +86,7 @@ app.get('/detail', function (req, res) {
             id: "1234",
             title: req.query.title,
             description: "Dispositivo móvil de Tienda e-commerce",
-            img: req.query.img,
+            picture_url: req.query.img,
             quantity: parseInt(req.query.unit),
             category_id: "1234",
             currency_id: "ARS",
