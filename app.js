@@ -119,5 +119,5 @@ app.get('/detail', function (req, res) {
     res.render('detail', req.query);
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
