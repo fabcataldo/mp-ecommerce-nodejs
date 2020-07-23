@@ -1,5 +1,6 @@
 
 <div class="as-search-wrapper" role="main">
+    <script src="https://www.mercadopago.com/v2/security.js" view="detail"></script>
     <div class="as-navtuck-wrapper">
         <div class="as-l-fullwidth  as-navtuck" data-events="event52">
             <div>
@@ -84,11 +85,8 @@
                                     {{ unit }}
                                 </h3>
                             </div>
-                            <form action="/procesar-pago" method="POST">
-                                <script
-                                src="https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js"
-                                data-preference-id="$$id$$">
-                                </script>
+                            <form action="/procesar-pago" method="post">
+                                <button type="submit" class="mercadopago-button" formmethod="post">Pagar</button>
                             </form>
                         </div>
                     </div>
